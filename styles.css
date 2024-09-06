@@ -1,0 +1,100 @@
+.form-switch .form-check-input {
+  display: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.form-switch .form-check-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #0088ff;
+}
+.fa-sun {
+  color: #f1c40f;
+}
+.form-switch .form-check-label .ball {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s linear;
+  cursor: pointer;
+}
+
+.form-check-input:checked + .form-check-label .ball {
+  transform: translateX(24px);
+}
+#darkModeSwitch {
+  display: none;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.card {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .card {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark-mode .navbar {
+  background-color: #222 !important;
+}
+
+body.dark-mode .navbar-light .navbar-brand,
+body.dark-mode .navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+body.dark-mode .form-control {
+  background-color: #555;
+  color: #fff;
+  border-color: #777;
+}
+
+body.dark-mode .btn-outline-success {
+  color: #28a745;
+  border-color: #28a745;
+}
+
+body.dark-mode .btn-outline-success:hover {
+  color: #fff;
+  background-color: #28a745;
+}
+
+.product-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+#cartItems .cart-item {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+#cartItems .cart-item:last-child {
+  border-bottom: none;
+}
